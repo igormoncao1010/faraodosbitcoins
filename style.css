@@ -124,7 +124,7 @@ body, html {
   }
 
   .hero-logo {
-    max-width: 70%; /* maior no mobile */
+    max-width: 60%; /* maior no mobile */
     margin-bottom: 15px;
   }
 
@@ -338,7 +338,7 @@ body, html {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
-  color: #FFD700; /* destaque dourado estilo “Faraó” */
+  color: orange; /* destaque dourado estilo “Faraó” */
 }
 
 .season-info {
@@ -398,7 +398,7 @@ body, html {
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #FFD700;
+  color: orange;
 }
 
 .characters-grid {
@@ -685,6 +685,81 @@ body, html {
   color: #FFD700;
 }
 
-.fonte2{
-  font-size: 20px;
+
+
+
+
+/* Container da seção */
+.equipe-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid da equipe */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Cards dos membros */
+.team-member {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* Efeito hover */
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Nome do membro */
+.member-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+/* Cargo do membro */
+.member-role {
+  font-size: 1rem;
+  color: #d0e6ff;
+  font-style: italic;
+}
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .team-member {
+    padding: 20px 15px;
+  }
+
+  .member-name {
+    font-size: 1.1rem;
+  }
+
+  .member-role {
+    font-size: 0.95rem;
+  }
 }
